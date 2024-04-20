@@ -24,4 +24,43 @@ t         Opens in text mode (default)
 b         Opens in binary mode.
 *         Opens a file for updating (reading and writing)
 
-        
+ Closing a file
+ 
+When we are done with performing operations on the file, we need to properly close the file.
+
+Closing a file will free up the resources that were tied with the file. It is done using the close() method available in Python.
+
+Python has a garbage collector to clean up unreferenced objects but we must not rely on it to close the file.
+
+f= open("test.txt", encoding = 'utf-8')
+
+#perform file operations
+f.close() I
+This method is not entirely safe. If an exception occurs when we are performing some operation with the file, the code exits without closing the file. A safer way is to use a try...finally block  
+
+try:
+f= open("test.txt", encoding = 'utf-8')
+#perform file operations
+finally:
+f.close()
+This way, we are guaranteeing that the file is properly closed even if an exception is raised that causes program flow to stop. The best way to close a file is by using the with statement. This ensures that the
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
