@@ -12,6 +12,7 @@ tupleData=("aTuple",1,2,3)
 
 nestedTuple=(1,"s",[5,4,3],[1,2])
 #Tuple can be accesed very much like a list at least
+#If we use [] to get the value but if the key does not exist it will return error whereas using get() method returns None if the key doesn't exist
 
 
 
