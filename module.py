@@ -21,8 +21,21 @@ print(calnum.subt(18,4))
 
  print(calnum.div(100,2))
 
+
+
 import calnum as cnum.
 print(cnum.div(4, 12.6))
 
 from calnum import div as dnum  
 dnum(500, 100)
+
+
+
+from calnum import *
+efrom calnum import div, mult
+print(mult(5, 10))
+print(div(6, 3))
+
+
+
+
