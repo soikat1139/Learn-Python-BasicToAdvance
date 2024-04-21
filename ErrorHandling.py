@@ -13,3 +13,32 @@ Finally-this is the action that you will want to use to perform cleanup actions,
 Assert this condition is going to trigger the exception inside of the code.
 Raise the raise command is going to trigger an exception manually inside of the code.
 • Try/except-this is when you want to try out a block of code and then it is recovered
+
+
+Example 1:
+# import module sys to get the type of exception import sys
+randomList = ['a', 0, 2]
+for entry in randomList:
+try:
+print("The entry is", entry) r = 1/int(entry)
+break
+except:
+print("Oops!", sys.exc_info()[0], "occurred.") print("Next entry.")
+print()
+print/"The reciprocal of" entru "ic" r)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
